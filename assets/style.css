@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(to right, blue, purple);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: navy;
+    color: white;
+    font-size: 2em;
+    border-bottom: 5px solid white;
+}
+
+#city-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#city-form input {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#city-form button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background: navy;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#current-weather, #forecast {
+    background: rgba(0, 0, 128, 0.7);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#forecast .day {
+    background: lightblue;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
