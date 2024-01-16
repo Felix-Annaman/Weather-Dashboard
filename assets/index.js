@@ -1,11 +1,11 @@
 document.getElementById('city-form').addEventListener('submit', function(event) {
     event.preventDefault();
     var city = document.getElementById('city-input').value;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=8f62f91c23e957086b5997909bf7a24e`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=8f62f91c23e957086b5997909bf7a24e`)
         .then(response => response.json())
         .then(data => {
             var iconCode = data.weather[0].icon;
-            var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+            var iconUrl = "https://openweathermap.org/img/w/" + iconCode + ".png";
             var img = document.createElement('img');
             img.src = iconUrl;
             document.getElementById('current-weather').appendChild(img);
@@ -21,7 +21,7 @@ document.getElementById('city-form').addEventListener('submit', function(event) 
             weatherInfo.textContent = `City: ${data.name}\nTemperature: ${tempC.toFixed(2)}°C (${tempF.toFixed(2)}°F)\nHumidity: ${data.main.humidity}%\nWind Speed: ${data.wind.speed} m/s`;
             document.getElementById('current-weather').appendChild(weatherInfo);
         });
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=8f62f91c23e957086b5997909bf7a24e`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=8f62f91c23e957086b5997909bf7a24e`)
         .then(response => response.json())
         .then(data => {
             var forecastDiv = document.getElementById('forecast');
