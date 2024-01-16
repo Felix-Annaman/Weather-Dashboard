@@ -19,3 +19,7 @@ This is a weather dashboard app that runs in the browser and features dynamicall
   - Icon representation of weather conditions
   - Temperature
   - Humidity
+
+
+![photo_2024-01-16_17-46-01](https://github.com/Felix-Annaman/Weather-Dashboard/assets/150185196/500d91ba-4f31-4fcd-b44e-727d38c69607)
+
